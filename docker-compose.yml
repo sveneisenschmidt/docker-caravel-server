@@ -1,0 +1,11 @@
+
+version: '2'
+services:
+    caravel:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports:
+            - "8088:8088"
+        stdin_open: true
+        tty: true
